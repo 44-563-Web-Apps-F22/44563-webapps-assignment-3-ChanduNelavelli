@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     </head>
+    <body>
     <p>I am Chandu from India. Came to Northwest Missouri for my Masters in Applied Computers Science. I worked as Application Development Associate in Accenture, India. With the help of this course I want to build an application</p>
 
         <h4>Siva</h4>
@@ -46,4 +47,37 @@
   <td>2 hours</td>
 </tr>
 </table>
+
+<hr>
+  <h4> Code Fencing </h4>
+  <blockquote>
+   All is well
+    </blockquote>
+    <a href="https://stackoverflow.com/questions/10057671/how-does-php-foreach-actually-work">How does PHP 'foreach' actually work?</a>
+  <pre>
+    <?php
+
+// The Regular Expression filter
+$reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+
+// The Text you want to filter for urls
+$text = "The text you want to filter goes here. http://google.com";
+
+// Check if there is a url in the text
+if(preg_match($reg_exUrl, $text, $url)) {
+
+       // make the urls hyper links
+       echo preg_replace($reg_exUrl, "<a href="{$url[0]}">{$url[0]}</a> ", $text);
+
+} else {
+
+       // if no urls in the text just return the text
+       echo $text;
+
+}
+?>
+      </pre>
+</head>
+
+</body>
 </html>
